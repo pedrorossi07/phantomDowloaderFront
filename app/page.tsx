@@ -23,7 +23,7 @@ export default function PhantomDownloader() {
     formData.append("phantom_id", phantomId);
 
     try {
-      const response = await fetch("http://localhost:8000/baixar/", {
+      const response = await fetch("https://phantomdownloaderback.onrender.com/baixar/", {
         method: "POST",
         body: formData,
       });
