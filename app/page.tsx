@@ -84,14 +84,15 @@ export default function PhantomDownloader() {
           {loading ? "Baixando..." : "Baixar Dados"}
         </Button>
 
+
         <Button
-          variant="outline"
-          className="w-full border-white text-white hover:bg-white hover:text-black h-12 text-lg"
+          className="w-full bg-transparent border border-white text-white hover:bg-white hover:text-black h-12 text-lg shadow-sm"
           onClick={() => setShowTutorial(!showTutorial)}
         >
           <PlayCircle className="mr-2 h-5 w-5" />
           {showTutorial ? "Esconder Tutorial" : "Ver Tutorial"}
         </Button>
+
       </div>
 
       {showTutorial && (
